@@ -1,0 +1,854 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Black_1.eot');
+  src: url('../fonts/HelveticaNeueCyr-Black_1.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Black_1.woff2') format('woff2'), url('../fonts/HelveticaNeueCyr-Black_1.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Black_1.ttf') format('truetype'), url('../fonts/HelveticaNeueCyr-Black_1.svg#HelveticaNeueCyr-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Roman.eot');
+  src: url('HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'), url('HelveticaNeueCyr-Roman.woff2') format('woff2'), url('HelveticaNeueCyr-Roman.woff') format('woff'), url('HelveticaNeueCyr-Roman.ttf') format('truetype'), url('HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('HelveticaNeueCyr-Medium.eot');
+  src: url('HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'), url('HelveticaNeueCyr-Medium.woff2') format('woff2'), url('HelveticaNeueCyr-Medium.woff') format('woff'), url('HelveticaNeueCyr-Medium.ttf') format('truetype'), url('HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/*Colors*/
+/*Basic setting*/
+html {
+  font-size: 11px;
+}
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'HelveticaNeueCyr-Roman', sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+.button {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  background-color: #94ca2d;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #85b528;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/* главный экран*/
+.main-section {
+  background: url(../img/main/main_bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.main-section:after {
+  height: 772px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.container,
+.section-header {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 90px;
+}
+.logo {
+  display: block;
+  margin-top: 1rem;
+}
+.adv {
+  position: absolute;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: -5rem;
+  font-size: 1.6rem;
+}
+.vr {
+  opacity: none;
+  font-size: 2rem;
+  color: #000000;
+  -webkit-transform: translateX(5.5rem) translateY(-3.5rem);
+          transform: translateX(5.5rem) translateY(-3.5rem);
+}
+.wrap {
+  text-align: center;
+  margin-top: 1rem;
+}
+.wrap p {
+  margin: 0;
+  font-size: 2.3rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.wrap a {
+  padding-bottom: 1rem;
+  border: none;
+  color: #94ca2d;
+  font-size: 1.9rem;
+}
+.main-title {
+  margin-top: 7rem;
+}
+.main-title h1 {
+  font-size: 3.5rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.main-subtitle {
+  font-size: 2rem;
+}
+.main-btn {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  background-color: #94ca2d;
+}
+.main-btn:hover {
+  cursor: pointer;
+  background-color: #85b528;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.main .device {
+  display: inline-block;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
+  margin-top: 4rem;
+}
+.main .dino {
+  text-align: center;
+  -webkit-transform: translateY(0rem);
+          transform: translateY(0rem);
+}
+.main .dino-iphone {
+  -webkit-transform: translateY(-7rem);
+          transform: translateY(-7rem);
+}
+.main .dino-img {
+  -webkit-transform: translateX(-7.3rem) translateY(-41.5rem);
+          transform: translateX(-7.3rem) translateY(-41.5rem);
+}
+.about-section {
+  min-height: 650px;
+  background: #000 url(../img/about/about-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.about-vr {
+  margin-top: 8rem;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: black;
+}
+.about p {
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-weight: normal;
+  color: black;
+}
+.about-kit {
+  text-align: right;
+  margin-top: 10rem;
+}
+.about .price-1 {
+  font-size: 1.8rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+}
+.about .price {
+  font-size: 1.8rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  -webkit-transform: translateY(-2.1rem);
+          transform: translateY(-2.1rem);
+}
+.about .comp {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+.about-complect-1,
+.about-complect-2 {
+  margin: 0;
+  font-size: 1rem;
+  color: black;
+}
+.about-complect-1 li,
+.about-complect-2 li {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.about strong {
+  color: red  ;
+}
+.about-btn {
+  margin-bottom: 8rem;
+  max-width: 45rem;
+}
+/*Возможности*/
+.opportunities {
+  margin-top: 6rem;
+}
+.opportunities-block {
+  color: black;
+}
+.opportunities-text {
+  display: inline-block;
+  margin-left: 11.5rem;
+  margin-top: 5rem;
+}
+.opportunities-krist {
+  text-align: right;
+  margin-top: 18rem;
+  -webkit-transform: translateX(4rem);
+          transform: translateX(4rem);
+}
+.opportunities-opis {
+  margin-left: 2rem;
+}
+.opportunities-opis-fir {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+.opportunities-opis-sec {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+.opportunities-car {
+  margin-left: 12rem;
+}
+/* ПРОМО СТРАНИЦА С ФОРМОЙ*/
+.promo-section {
+  margin-top: 8rem;
+  background: url(../img/promo-page/promo-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.promo-header {
+  margin-top: 7rem;
+}
+.promo-header h2 {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 3rem;
+}
+.promo-arrow {
+  -webkit-clip-path: polygon(0% 0%, 90% 0%, 95% 50%, 90% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 90% 0%, 95% 50%, 90% 100%, 0% 100%);
+  margin-top: 3rem;
+  background-color: #18a7d0;
+}
+.promo-arrow p {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+.promo-features {
+  margin-top: 3rem;
+  display: inline-block;
+}
+.promo-features p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  display: inline-block;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.promo-formbox {
+  background-color: #000;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 3px solid #21a3af;
+  border-radius: 3px;
+  padding: 3rem 3rem 3rem 3rem;
+}
+.promo-formbox h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.promo-form {
+  text-align: center;
+}
+.promo-form .sml {
+  margin-top: 2rem;
+}
+.promo-form input {
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-top: 1rem;
+  min-height: 5rem;
+  width: 25rem;
+  color: #fff;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+.promo-form ::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 1.3rem;
+}
+.promo-btn {
+  margin: 1rem auto;
+  max-width: 25rem;
+}
+.oppo2 {
+  margin-bottom: 7rem;
+}
+/*Как это работает*/
+.how {
+  /*background: #fff url(../img/HOW/how-bg.jpg) center no-repeat;
+    background-size: cover;*/
+  background-color: #f8f8f0;
+  min-height: 57rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+}
+.how h2 {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 9rem;
+  margin-left: 8rem;
+  color: black;
+}
+.how-box {
+  margin-top: 1rem;
+  margin-left: 20rem;
+  height: 0.7rem;
+  width: 6rem;
+  text-align: center;
+  background-color: #18a7d0;
+}
+.how-its {
+  margin-top: 8rem;
+}
+.how-its p {
+  text-align: center;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  color: black;
+  font-size: 1.6rem;
+}
+.how-point {
+  padding: 0;
+  text-align: center;
+  max-width: 29rem;
+  display: inline-block;
+}
+/*Совместимость*/
+.compat h2 {
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  font-size: 3rem;
+}
+.compat-item {
+  margin-top: 6rem;
+  display: inline-block;
+}
+.compat-glasses {
+  margin-left: 7rem;
+}
+.compat-text {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  color: black;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+}
+.compat-text2 {
+  margin-top: 1rem;
+  display: inline-block;
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+}
+.compat-text2 p {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  color: black;
+}
+.compat-a {
+  margin-left: -2rem;
+}
+.compat-w {
+  margin-left: -2rem;
+}
+.video {
+  background: #000 url(../img/video/video-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.video-content {
+  margin-top: 6rem;
+  text-align: center;
+}
+.video-content h2 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.video-content p {
+  margin-bottom: 8rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+/*игры*/
+.games-box {
+  text-align: center;
+  margin-top: 1rem;
+  margin: 0 auto;
+  height: 0.6rem;
+  width: 6rem;
+  background-color: #18a7d0;
+}
+.games h2 {
+  font-size: 2.5rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  margin-top: 6rem;
+  text-align: center;
+  color: black;
+}
+.games-icons {
+  margin-top: 3rem;
+  text-align: center;
+}
+.games-phones {
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+.games-phones-2 {
+  margin-top: 2.4rem;
+}
+.games-phones h4 {
+  margin-top: 2rem;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  color: black;
+}
+.games-phones p {
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.1rem;
+  color: black;
+}
+.games-btn {
+  max-height: 5rem;
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+  text-align: center;
+}
+.feedback-box {
+  text-align: center;
+  margin-top: 1rem;
+  margin-left: 25rem;
+  height: 0.6rem;
+  width: 6rem;
+  background-color: #18a7d0;
+}
+.feedback p {
+  font-size: 1.3rem;
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.feedback h2 {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.feedback h4 {
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.6rem;
+}
+.feedback-text {
+  margin-top: 5rem;
+}
+.feedback .media {
+  max-width: 55rem;
+  display: inline-block;
+  margin-top: 5rem;
+}
+.feedback .media-box {
+  padding: 2rem;
+  border: 2px solid #18a7d0;
+  border-radius: 4px;
+}
+.feedback .media-object {
+  margin-right: 2rem;
+}
+.feedback .media-heading {
+  margin-top: 2rem;
+}
+.promo2 {
+  background: url(../img/promo-page/promo2-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.podval {
+  padding: 5rem 0;
+}
+.podval h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+.podval a {
+  max-width: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin-left: 19.5rem;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+  font-family: 'HelveticaNeueCyr';
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+.podval a:hover {
+  border-bottom: 1px dashed;
+  /* Добавляем синее пунктирное подчёркивание */
+}
+/* Модальные окна*/
+.popup {
+  position: fixed;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  z-index: 9;
+}
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+  background-color: #000;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 3px solid #21a3af;
+  border-radius: 3px;
+  padding: 3rem 3rem 3rem 3rem;
+}
+.popup-close {
+  position: absolute;
+  top: -1.2rem;
+  right: -0.9rem;
+  border-radius: 50%;
+  border: 2px solid #21a3af;
+  background-color: #000;
+  color: #21a3af;
+  font-size: 1.3rem;
+}
+.popup-content {
+  text-align: center;
+}
+.popup-select {
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  margin-top: 1rem;
+  min-height: 5rem;
+  width: 25rem;
+  color: #fff;
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+.popup .promo-btn {
+  margin: 1.5rem auto;
+}
+footer {
+  background-color: #000;
+}
+@media (max-width: 1366px) {
+  .footer-link {
+    margin-left: 22rem;
+    text-align: center;
+  }
+  .how h2 {
+    margin-right: 7rem ;
+  }
+  .how-box {
+    margin: 0 auto;
+  }
+  .how-its {
+    margin-left: 5rem;
+  }
+  .how-point {
+    display: inline-block;
+    max-width: 250px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .header {
+    height: 15rem;
+  }
+  .dino-iphone {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .logo {
+    display: inline-block;
+  }
+  .logo .vr {
+    max-width: 350px;
+  }
+  .adv {
+    left: 14rem;
+    bottom: 1.5rem;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .main-head {
+    max-height: 8rem;
+  }
+  .wrap {
+    margin: 0 auto;
+    bottom: 5rem;
+  }
+  .button {
+    max-width: 20rem;
+  }
+  .main-header {
+    min-height: 15rem;
+  }
+  .about {
+    position: relative;
+  }
+  .about-kit {
+    margin: 0;
+  }
+  .about-kit img {
+    max-width: 100%;
+  }
+  .about-btn {
+    min-height: 7.5rem;
+  }
+  .opportunities-krist {
+    display: none;
+  }
+  .opportunities-text {
+    margin: 2rem auto 2rem;
+    max-width: 100%;
+  }
+  .opportunities-assasin img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .opportunities-snow img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .opportunities-car {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .opportunities-car img {
+    max-width: 430px;
+  }
+  .form-btn {
+    min-width: 70%;
+    margin: 1rem auto;
+  }
+  .how {
+    padding: 10rem 0;
+  }
+  .how h2,
+  .how-box {
+    margin: 1rem auto;
+  }
+  .how-its {
+    margin: 0 auto;
+  }
+  .how-point {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 46%;
+    margin: 0 auto;
+  }
+  .compat-devices {
+    display: none;
+  }
+  .compat-phones img {
+    max-width: 100%;
+    margin: 0rem auto;
+  }
+  .compat-glasses {
+    margin: 2rem auto;
+  }
+  .compat-glasses img {
+    max-width: 100%;
+  }
+  .compat-text2 {
+    text-align: center;
+  }
+  .games-box {
+    margin: 0 auto;
+  }
+  .footer-link {
+    right: 8rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .form-input {
+    max-width: 70%;
+  }
+  input {
+    min-width: 95%;
+  }
+  .VRBOX img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .opportunities-iron img {
+    width: 100%;
+  }
+  .opportunities-car img {
+    width: 100%;
+  }
+  -assasin img {
+    width: 90%;
+  }
+  .how-point {
+    width: 30%;
+    margin-left: 3rem;
+  }
+  .how-point p {
+    font-size: 1.2rem;
+  }
+  .how-point img {
+    width: 70%;
+  }
+  .games-phones {
+    margin: 0 auto;
+  }
+  .games-phones img {
+    width: 100%;
+  }
+  .games-btn {
+    margin: 0 auto;
+  }
+  .feedback-box {
+    margin: 0 auto;
+  }
+  .popup-content {
+    width: 95%;
+  }
+  .popup-select {
+    max-width: 95%;
+  }
+}
