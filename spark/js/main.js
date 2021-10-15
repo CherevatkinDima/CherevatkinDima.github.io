@@ -133,17 +133,17 @@ $(document).ready(function() {
     
     });
 
-
     
 
-    $('.catalog__burger').click(function(event) {
-        $('.catalog__burger,.catalog__left').toggleClass('active');
-        $('body').toggleClass('lock');
+    $('li').click(function(event) {
+        $('.catalog__left').addClass('active');
+        
     });
 
-    $('li').click(function(event) {
-        $('.catalog__burger,.catalog__left').removeClass('active');
-        $('body').removeClass('lock');
+    $('.catalog__close').click(function(event) {
+        $('.catalog__left').removeClass('active');
+        $('*').removeClass('active');
+        
     });
 
 
