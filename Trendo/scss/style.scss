@@ -29,8 +29,10 @@
 	font-weight: 500;
 	font-size: 18px;
 	border-right: 1px solid grey;
+	border-left: 1px solid grey;
 	padding: 10px 60px;
 	height: 100%;
+	text-align: center;
 	vertical-align: center;
 	cursor: pointer;
 }
@@ -293,7 +295,6 @@ font-size: 46px;
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
 
-
 }
 
 
@@ -306,21 +307,27 @@ font-size: 46px;
 /* xs <= Small (sm) */
 @media (max-width : 576px) {
 	.header {
-		height: 40px;
-	}
-	.header-nav__item-burg {
-		border-right: 1px solid grey;
-		padding: 6px 8px;
+		max-width : auto;
+		height: 50px;
+		justify-content: space-around;
 	}
 	.header-nav__item {
-		display: none;
+		padding: 7px;
+		font-size: 12px;
+		display: block;
+		border-left: 0px;
+		vertical-align: middle;
+	}
+	.header-nav__item:first-child {
+		padding: 16px;
 	}
 	.main-section__title {
 		margin-top: 30px;
 	}
 	.main-section__shops {
 		display: grid;
-		grid-template-columns: 1fr 10fr;
+		grid-template-columns:2fr 10fr;
+		margin-left: 30px;
 	}
 	.shops-item img {
 		max-width: 35px;
@@ -359,7 +366,7 @@ font-size: 46px;
 	.about-button::after {
 		content: '';
 		position: absolute;
-		right: -70px;
+		right: -100px;
 		top: 0;
 		display: inline-block;
 		width: 100%;
@@ -382,28 +389,33 @@ font-size: 46px;
 
 	.prices-item {
 		margin-bottom: 20px;
+		position: relative;
+	}
+	.prices-item img {
+		max-width: 80px;
 	}
 	.prices-item__button {
 		position: relative;
+		border: none;
 		display: inline-block;
-		max-width: 332px;
+		width: 100%;
 		padding: 12px 83px;	
-		margin-left: 10px;
+
 	}
 	.prices-form__button {
-		padding: 12px 114px;	
-		width: auto;
+		padding: 12px 143px;	
+		width: 100%;
 	}
 
 	.prices-form__name {
-		width: 331px;
+		width: 100%;
 		height: 40px;
 		margin-bottom: 20px;
 	}
 	.prices-form__phone {
-		width: 331px;
+		width: 100%;
 		height: 40px;
-		margin-bottom: 20px;
+		margin-bottom: 30px;
 	}
 	.container {
 		position: relative;
@@ -413,14 +425,14 @@ font-size: 46px;
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		max-width: 120px;
+		max-width: 170px;
 		transform: scale(-1, 1);
 	}
 	.main-section__title {
-		font-size: 17px;
+		font-size: 20px;
 	}
 	.main-section__text {
-		font-size: 8px;
+		font-size: 10px;
 		line-height: 133.02%;
 		max-width: 230px;
 	}
