@@ -201,13 +201,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="prices-form col-sm-12">
+				<form action="mail.php" method="POST" class="prices-form col-sm-12">
 					<h4 class="prices-form__title">Получить консультацию:</h4>
-					<input class="prices-form__name" type="text" placeholder="Имя">
-					<input class="prices-form__phone" type="text" placeholder="Номер">
-					<a href="" class="prices-form__button">Отправить</a>
+					<input class="prices-form__name" type="text" placeholder="Имя" name="user_name">
+					<input class="prices-form__phone" type="text" placeholder="Номер" name="user_phone">
+					<button type="submit" href="" class="prices-form__button">Отправить</button>
 					<p class="prices-form__text">*любой пакет возможно приобрести в рассрочку через kaspi, forte, halyk или jusan</p>
-				</div>
+				</form>
 			</div>
 		</div>
 	</section>	
